@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 
 function Test() {
-    const socket = io("https://chatapplicationbackend-8h4m.onrender.com");
+    const socket = io("https://chatapplicationbackend-8h4m.onrender.com"); //https://chatapplicationbackend-8h4m.onrender.com
     const [state, setState] = useState({ uname: "", nametoggle: true });
     const [text, setText] = useState({ curtext: "" });
     const [chatMessages, setChatMessages] = useState([]);
